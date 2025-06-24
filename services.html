@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - MediCare Hospital</title>
+    <style>
+        body {
+            /* Replace the placeholder URL with the actual path to your image */
+            background-image: url('img/servicesbanner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: #e7e8e8;
+            color: rgb(31, 37, 198);
+            padding: 10px;
+        }
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px; /* Adjust as needed */
+        }
+        nav h1 {
+            text-align: center;
+            flex-grow: 1;
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            margin: 40px 0 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #1e40af;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #374151;
+        }
+        .service-card p {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        .service-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        footer {
+            background-color: #1e40af;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, auto);
+                padding: 0 10px;
+            }
+            h2 {
+                margin: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="medicare.html">
+                        <img src="img/logobg.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <h1>MediCare Hospital</h1>
+            <a href="appointment.html" style="color: rgb(10, 102, 223); text-decoration: none;">Book Appointment</a>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section style="flex: 1;">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <a href="cardiology.html">
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive heart care, including diagnostics, treatment, and cardiac rehabilitation.</p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="neurology.html">
+                    <h3>Neurology</h3>
+                    <p>Expert care for neurological disorders, including stroke management and epilepsy treatment.</p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="orthopedics.html">
+                    <h3>Orthopedics</h3>
+                    <p>Specialized treatment for bones, joints, and muscles, including surgery and physiotherapy.</p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="pediatrics.html">
+                    <h3>Pediatrics</h3>
+                    <p>Dedicated care for children, from routine check-ups to specialized treatments.</p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="emergency.html">
+                    <h3>Emergency Services</h3>
+                    <p>24/7 emergency care with rapid response and advanced life-saving technology.</p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="radiology.html">
+                    <h3>Radiology</h3>
+                    <p>Advanced imaging services, including X-rays, MRIs, and CT scans for accurate diagnosis.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MediCare Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
